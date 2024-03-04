@@ -1,0 +1,8 @@
+export enum StatusCode {
+	SUCCESS = 200,
+  PARAMETER_ERROR = 400,
+  LOGIN_ERROR = 401,
+	DISABLE = 403,
+  NONE_ERROR = 404,
+  SYSTEM_ERROR = 500,
+}

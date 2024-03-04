@@ -1,0 +1,30 @@
+{
+  // "extends": "@vue/tsconfig/tsconfig.json",
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "importHelpers": true,
+    "allowSyntheticDefaultImports": true,
+    "useDefineForClassFields": true,
+    "resolveJsonModule": true,
+    "types": [
+      "vite/client",
+      "@dcloudio/types",
+      "@uni-helper/uni-app-types",
+      "@uni-helper/uni-cloud-types",
+      "@uni-helper/uni-ui-types"
+    ],
+    "baseUrl": "./",
+    "lib": ["esnext", "dom"],
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "exclude": ["node_modules", "unpackage", "src/**/*.nvue"]
+}

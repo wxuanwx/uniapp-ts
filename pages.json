@@ -1,0 +1,50 @@
+{
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"^uv-(.*)": "@climblee/uv-ui/components/uv-$1/uv-$1.vue"
+		}
+	},
+	"pages": [{
+		"path": "pages/index/index",
+		"style": {
+			"navigationBarTitleText": "首页",
+			"navigationStyle": "custom"
+		}
+	}, {
+		"path": "pages/mine/mine",
+		"style": {
+			"navigationBarTitleText": "我的",
+			"navigationStyle": "custom"
+		}
+	}],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "",
+		"navigationBarBackgroundColor": "#FD6B21",
+		"backgroundColor": "#F8F8F8",
+		"pageOrientation": "portrait"
+	},
+	"tabBar": {
+		"color": "#C7D2DC",
+		"fontSize": "10px",
+		"selectedColor": "#FD6B21",
+		"backgroundColor": "white",
+		"iconWidth": "20px",
+		"spacing": "4px",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "/static/imgs/tabbar/home.png",
+				"selectedIconPath": "/static/imgs/tabbar/home_active.png"
+			},
+			{
+				"pagePath": "pages/mine/mine",
+				"text": "我的",
+				"iconPath": "/static/imgs/tabbar/mine.png",
+				"selectedIconPath": "/static/imgs/tabbar/mine_active.png"
+			}
+		]
+	},
+	"uniIdRouter": {}
+}
